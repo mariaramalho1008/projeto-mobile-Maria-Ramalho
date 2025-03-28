@@ -23,7 +23,7 @@ export default function HomeScreen() {
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Saldo em conta</ThemedText>
         <ThemedText>
-         <ThemedText type="defaultSemiBold">R$500,00</ThemedText> to see changes.
+         <ThemedText type="defaultSemiBold">R$500,00</ThemedText> 
           <ThemedText type="defaultSemiBold">
             {Platform.select({
               ios: 'cmd + d',
