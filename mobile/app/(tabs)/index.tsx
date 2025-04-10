@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, Button } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -24,9 +24,13 @@ export default function HomeScreen() {
         <ThemedText type="subtitle">Saldo em conta</ThemedText>
         <ThemedText>
          <ThemedText type="defaultSemiBold">R$ 500,00.</ThemedText> 
-          
-        
         </ThemedText>
+        <Button
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="PIX"
+/>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Caixinha</ThemedText>
