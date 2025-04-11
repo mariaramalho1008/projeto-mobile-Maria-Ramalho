@@ -25,7 +25,7 @@ export default function HomeScreen() {
         <ThemedText>
          <ThemedText type="defaultSemiBold">R$ 500,00.</ThemedText> 
         </ThemedText>
-        <Button
+        <Button color={'black'}
   onPress={() => {
     console.log('You tapped the button!');
   }}
@@ -40,8 +40,13 @@ export default function HomeScreen() {
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Cartão Virtual</ThemedText>
-        <ThemedText>
-        {' '}
+        <ThemedText>{' '}
+        <Button color={'black'}
+  onPress={() => {
+    console.log('You tapped the button!');
+  }}
+  title="VER MAIS"
+/>
           <ThemedText type="defaultSemiBold"></ThemedText>{' '}
           <ThemedText type="defaultSemiBold"></ThemedText> {' '}
           <ThemedText type="defaultSemiBold"></ThemedText> {' '}
